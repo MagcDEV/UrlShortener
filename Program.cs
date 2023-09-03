@@ -75,7 +75,6 @@ app.MapGet("api/{code}", async (
 
 });
 
-
 app.UseHttpsRedirection();
 
 app.Run();
