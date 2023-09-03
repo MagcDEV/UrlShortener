@@ -6,6 +6,7 @@ services:
   urlshortener-db:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: UrlShortener.Db
+    user: root
     volumes:
       - ./.containers/database:/var/opt/mssql/data
     ports:
